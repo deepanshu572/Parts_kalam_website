@@ -717,7 +717,7 @@ body{
     background-color: black;
     width: 100%;
     padding: 10px;
-    /* padding-bottom: 4rem; */
+    padding-bottom: 4rem;
     font-size: 14px;
 }
 .radio_input[type='radio'] {
@@ -2546,9 +2546,7 @@ height: 415px;
 
 }
 }
-.update_foot{
-    padding-bottom: 15px;
-}
+
 /* Web development PAGE CSS */
 
 .buisness_btn{

@@ -2455,7 +2455,7 @@ body{
     background-color: black;
     width: 100%;
     padding: 10px;
-    /* padding-bottom: 4rem; */
+    padding-bottom: 4rem;
     font-size: 14px;
 }
 .radio_input[type='radio'] {
