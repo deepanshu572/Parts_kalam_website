@@ -336,7 +336,13 @@ let slider = document.querySelector('.slideri'),
 
 const updateActiveClass = function () {
     slides.forEach((slide, index) => {
-        slide.classList.toggle('activei', index === slideIndex);
+        console.log(index);
+        console.log(slide);
+        console.log(slideIndex);
+        
+      var slideCheck =  slide.classList.toggle('activei', index === slideIndex);
+    //   console.log(slideCheck);
+      
     });
 };
 
@@ -362,3 +368,12 @@ arrows.addEventListener('click', function () {
 });
 
 updateActiveClass(); // Initial call to set the active class
+
+
+     document.addEventListener("DOMContentLoaded", function(e) {
+          //  console.log("hello");
+          for (let i = 0; i < 3; i++) {
+            next.click();    
+          }
+            
+      });

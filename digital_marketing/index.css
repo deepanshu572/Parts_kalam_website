@@ -3073,8 +3073,11 @@ height: 415px;
     font-size: 50px;
 }
 .kalam_buisness_success_story iframe{
-    /* width: 100%; */
+    width: 100%;
     padding: 21px;
+    width: 320px;
+    /* padding: 10px; */
+    height: 100%;
 }
 .kalam_buisness_success_story b{
     color: var(--theme-color);
@@ -3709,10 +3712,14 @@ height: 415px;
     .kalam_banner_bottom{
         padding-top: 9px;
     }
-    .kalam_buisness_success_story iframe{
+    /* .kalam_buisness_success_story iframe{
         width: 100%;
         height: 260px;
-    }
+    } */
+     .kalam_digital_success_story .slideri{
+        width: auto !important;
+        overflow: unset !important;
+     }
     .kalam_buisness_different_img{
         width: 135px;
     }
@@ -3935,4 +3942,89 @@ font-size: 15px;
     box-shadow: unset;
     animation: unset;
     transform: scale(1.2);
+}
+
+
+
+/* crousel */
+.slideri {
+    touch-action: pan-y;
+    width: 800px;
+    overflow: hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slideri img {
+    pointer-events: none;
+}
+
+.slider-list {
+    width: 200px;
+    height: 200px;
+    /* overflow: hidden; */
+}
+.slidei img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing {
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+    transform: translate3d(-200px, 0px, 0px);
+}
+
+.slidei {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    padding: 10px;
+}
+
+.slider-arrows {
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next, .prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+    background: var(--theme-color);
+    height: 7px;
+    width: 47px;
+    position: relative;
+    top: 6px;
+    border-radius: 11px;
+}
+
+.next.disabled, .prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
+
+.activei {
+    scale: 1.2;
 }
