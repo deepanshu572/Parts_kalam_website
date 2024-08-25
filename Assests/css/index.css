@@ -85,7 +85,8 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 2rem 0px;
-    background-image: url(../Assests/img/big_img.jpg);
+    /* background-image: url(../Assests/img/big_img.jpg); */
+    background-image: url(../img/big_img.jpg);
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
