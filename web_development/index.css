@@ -1439,16 +1439,18 @@ height: 415px;
     position: relative;
 }
 .kalam_buisness_banner_section {
-    background-image: url(../Assests/img/kalam_buisness_banner.jpeg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    padding: 2rem;
+       /* background-image: url(../Assests/img/banner.png); */
+    /* background-image: url(../Assests/img/kalam_buisness_banner.jpeg); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* padding: 2rem; */
+    background: var(--theme-color);
     color: #fff;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    padding-left: 411px;
+
 }
 .kalam_buisness_banner_section h2{
     font-size: 40px !important;
@@ -1459,7 +1461,28 @@ height: 415px;
     align-items: center;
     gap: 5px;
     padding-top: 16px;
+    padding-left: 104px;
+    justify-content: center;
 }
+.kalam_banner_section_img {
+    width: 300px;
+    height: 178px;
+}
+.kalam_banner_section_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.kalam_banner_wrap{
+    padding-left: 51px;
+}
+/* .kalam_banner_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding-top: 16px;
+} */
 .kalam_banner_bottom p{
     font-size: 25px;
 }
@@ -1838,6 +1861,12 @@ height: 415px;
 }
 
 @media (max-width: 600px) {
+    .kalam_banner_bottom{
+        padding: 0;
+    }
+    .kalam_banner_wrap{
+        padding-left: 0;
+    }
 
     .kalam_navbar2 .clicked{
         text-decoration: none;
@@ -1954,7 +1983,8 @@ height: 415px;
         margin-bottom: 34px;
     }
     .kalam_buisness_banner_section {
-        background-image: url(../Assests/img/kalam_buisness_banner_small.jpeg);
+        /* background-image: url(../Assests/img/kalam_buisness_banner_small.jpeg); */
+        /* background-image: url(../Assests/img/banner.png); */
     }
     .kalam_reuse_partner_section{
         padding-bottom: 0 !important;
@@ -2055,12 +2085,16 @@ height: 415px;
 
 }
 .kalam_buisness_banner_section{
-        padding-left: 10rem;
+        /* padding-left: 10rem; */
         text-align: center;
         padding-right: 0;
-        padding-bottom: 10px;
-        padding-top: 14px;
+        padding-bottom: 0px;
+        /* padding-top: 14px; */
         text-align: center;
+}
+.kalam_banner_section_img{
+    padding: 0.8px 0px;
+    width: 222px;
 }
 .kalam_why_page_box1{
     gap: 6px;
@@ -2692,7 +2726,7 @@ font-size: 15px;
     text-align: center;
 }
 
-.kalam_reuse_partner_section_item {
+/* .kalam_reuse_partner_section_item {
     display: flex;
     flex-wrap: wrap;
     width: 62%;
@@ -2701,9 +2735,27 @@ font-size: 15px;
     gap: 151px;
     padding: 2rem 0px;
     row-gap: 52px;
+} */
+.kalam_reuse_partner_section_item {
+       /* display: flex; */
+    /* flex-wrap: wrap; */
+    width: 62%;
+    align-items: center;
+    justify-content: space-evenly;
+    /* gap: 151px; */
+    padding: 2rem 1rem;
+    /* row-gap: 52px; */
+    /* width: 100%; */
+    /* height: 100px; */
+    overflow: scroll;
+    white-space: nowrap;
+    /* padding-bottom: 0; */
+}
+.kalam_reuse_partner_section_item::-webkit-scrollbar{
+    display: none;
 }
 
-.kalam_reuse_partner_box1 {
+/* .kalam_reuse_partner_box1 {
     box-shadow: 0px 4px 20px 0px #F96D0333;
     display: flex;
     flex-direction: column;
@@ -2713,6 +2765,18 @@ font-size: 15px;
     border-radius: 12px;
     height: 182px;
     width: 160px;
+} */
+.kalam_reuse_partner_box1 {
+    box-shadow: 0px 4px 20px 0px #F96D0333;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-radius: 12px;
+    height: 151px;
+    width: 150px;
+    margin-right: 10px;
 }
 
 .kalam_reuse_partner_img1 {
@@ -2779,7 +2843,15 @@ font-size: 15px;
 
 .kalam_reuse_topic_head {
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+.kalam_reuse_topic_head .icon{
+    width: 20px;
+    fill: var(--theme-color);
+}
+
 
 .kalam_reuse_topic_content {
     padding: 9px;
@@ -2955,6 +3027,23 @@ font-size: 15px;
 #topic11:checked + label + #topicDiv11,
 #topic12:checked + label + #topicDiv12{
     display: block;
+}
+#topic1[type="checkbox"]:checked ~ label #dropbox1,
+#topic2[type="checkbox"]:checked ~ label #dropbox2,
+#topic3[type="checkbox"]:checked ~ label #dropbox3,
+#topic4[type="checkbox"]:checked ~ label #dropbox4,
+#topic5[type="checkbox"]:checked ~ label #dropbox5,
+#topic6[type="checkbox"]:checked ~ label #dropbox6,
+#topic7[type="checkbox"]:checked ~ label #dropbox7,
+#topic8[type="checkbox"]:checked ~ label #dropbox8,
+#topic9[type="checkbox"]:checked ~ label #dropbox9,
+#topic10[type="checkbox"]:checked ~ label #dropbox10,
+#topic11[type="checkbox"]:checked ~ label #dropbox11,
+#topic12[type="checkbox"]:checked ~ label #dropbox12{
+   rotate: 180deg;
+}
+.kalam_reuse_topic_head svg{
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275)1s;
 }
 .kalam_Syllabus h2 {
     font-size: 50px;

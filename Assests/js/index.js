@@ -72,3 +72,4 @@ function checkElement(el) {
     (left + width) <= (window.pageXOffset + window.innerWidth)
   );
 }
+

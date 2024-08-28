@@ -3182,16 +3182,18 @@ height: 415px;
     position: relative;
 }
 .kalam_buisness_banner_section {
-    background-image: url(../Assests/img/kalam_buisness_banner.jpeg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    padding: 2rem;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 411px;
+    /* background-image: url(../Assests/img/banner.png); */
+ /* background-image: url(../Assests/img/kalam_buisness_banner.jpeg); */
+ /* background-position: center; */
+ /* background-repeat: no-repeat; */
+ /* background-size: cover; */
+ /* padding: 2rem; */
+ background: var(--theme-color);
+ color: #fff;
+ display: flex;
+ /* flex-direction: column; */
+ align-items: center;
+
 }
 .kalam_buisness_banner_section h2{
     font-size: 40px !important;
@@ -3553,7 +3555,25 @@ height: 415px;
     .hide_content{
         display: none;
     }
+    .kalam_banner_section_img {
+        width: 300px;
+        height: 178px;
+    }
+    .kalam_banner_section_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .kalam_banner_wrap{
+        padding-left: 51px;
+    }
 @media (max-width: 600px) {
+    .kalam_banner_bottom{
+        padding: 0;
+    }
+    .kalam_banner_wrap{
+        padding-left: 0;
+    }
     #navbar ul li a {
         text-decoration: none;
         color: black;
@@ -3660,7 +3680,7 @@ height: 415px;
         margin-bottom: 34px;
     }
     .kalam_buisness_banner_section {
-        background-image: url(../Assests/img/kalam_buisness_banner_small.jpeg);
+        /* background-image: url(../Assests/img/kalam_buisness_banner_small.jpeg); */
     }
     .kalam_reuse_partner_section{
         padding-bottom: 0 !important;
@@ -3765,12 +3785,15 @@ height: 415px;
 
 }
 .kalam_buisness_banner_section{
-        padding-left: 10rem;
-        text-align: center;
-        padding-right: 0;
-        padding-bottom: 10px;
-        padding-top: 14px;
-        text-align: center;
+               /* padding-left: 10rem; */
+               text-align: center;
+               padding-right: 0;
+               /* padding-bottom: 10px; */
+               /* padding-top: 14px; */
+               text-align: center;
+}
+.kalam_banner_section_img{
+    padding: 0.8px 0px;
 }
 .kalam_why_page_box1{
     gap: 6px;
