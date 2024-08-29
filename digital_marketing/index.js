@@ -374,5 +374,41 @@ document.querySelectorAll('.slideri').forEach(slider => {
     initializeSlider(slider);
 });
 
+const popupdata = [
+    {
+     "imgUrl":"../Assests/img/cup.png"
+    },
+    {
+     "imgUrl":"../Assests/img/kalam_webapp1.png"
+    },
+    {
+     "imgUrl":"../Assests/img/cup.png"
+    },
+    {
+     "imgUrl":"../Assests/img/cup.png"
+    }
+ ]
+ 
+ function Poppup(i) {
+     var item = document.getElementById('popupData');
+     item.innerHTML = `<img src="${popupdata[i].imgUrl}" alt="">`  
+ }
+ var btns = document.querySelectorAll('.award_popup');
+ var btnsBox = document.getElementById('hide');
+ var close = document.getElementById('close');
+ 
+ btns.forEach(function(btn) {
+     btn.addEventListener("click", function(){
+         btnsBox.style.display = "block";
+         document.body.style.overflow = 'hidden';
+     });
+ });
+ 
+ close.addEventListener("click", function(){
+     btnsBox.style.display = "none";
+     document.body.style.overflow = 'auto';
+
+ });
+ 
 
    

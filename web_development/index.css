@@ -2110,10 +2110,10 @@ height: 415px;
     height: 53px;
 }
 .kalam_first_bottom_foot{
-    display: none;
+    display: none !important;
 }
 .kalam_first_center_foot{
-    display: none;
+    display: none !important;
 }
 .footer_text{
     padding-bottom: 5rem;
