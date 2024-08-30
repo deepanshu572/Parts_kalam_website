@@ -3573,6 +3573,7 @@ height: 415px;
     .kalam_award_wrap_img {
         height: 234px !important;
         width: auto !important;
+        margin: auto !important;
     }
     .award_popup {
         width: 30vw;

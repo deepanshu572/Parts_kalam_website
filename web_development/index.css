@@ -1879,6 +1879,7 @@ height: 415px;
     .kalam_award_wrap_img {
         height: 234px !important;
         width: auto !important;
+        margin: auto !important;
     }
     .kalam_reuse_certificate_section .slideri{
         height: 300px !important;
