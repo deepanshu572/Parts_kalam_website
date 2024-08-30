@@ -576,6 +576,7 @@ body{
     flex-wrap: wrap;
     padding: 1rem 0px;
     justify-content: center;
+    width: 400px;
 }
 .kalam_awards{
     display: flex;
@@ -1648,8 +1649,9 @@ overflow: hidden;
     #section4 p{
         text-align: center;
     }
+
     .kalam_buisness_faq_section_wrap p{
-        text-align: unset;
+        text-align: unset !important;
     }
     .kalam_navbar2 {
         position: fixed;
@@ -2671,7 +2673,7 @@ z-index: 1;
     width: 447px;
 }
 .kalam_awards_wrap{
-    gap: 33px;
+    gap: 0px;
 }
 .kalam_contact_map{
     width: 399px;
@@ -4063,7 +4065,8 @@ font-size: 15px;
     height: 242px;
 }
 .kalam_award_wrap_img {
-    width: 300px;
+    width: 441px;
+    height: 246px;
 }
 .kalam_award_wrap_img img{
     width: 100%;
@@ -4072,4 +4075,6 @@ font-size: 15px;
 .kalam_award_popup_img_wrapper{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
