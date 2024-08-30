@@ -583,6 +583,7 @@ body{
     flex-wrap: wrap;
     padding: 1rem 0px;
     justify-content: center;
+    width: 400px;
 }
 .kalam_awards{
     display: flex;
@@ -590,11 +591,25 @@ body{
     align-items: center;
     padding: 1rem 0px;
 }
-.kalam_awards_wrap img {
-    /* width: 136px; */
-     width: 34vw; 
+.kalam_award_popup_img_wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.kalam_award_wrap_img {
+    width: 441px;
+    height: 246px;
+}
+.award_popup img{
+    width: 100%;
     height: 100%;
 }
+.kalam_award_wrap_img img {
+    width: 100%;
+    height: 100%;
+}
+
 .kalam_awards h2{
     font-size: 30px;
 }
@@ -933,7 +948,7 @@ z-index: 1;
     width: 447px;
 }
 .kalam_awards_wrap{
-    gap: 33px;
+    gap: 0;
 }
 .kalam_contact_map{
     width: 399px;
@@ -1861,6 +1876,16 @@ height: 415px;
 }
 
 @media (max-width: 600px) {
+    .slideri{
+        height: auto !important;
+    }
+    .kalam_digital_success_story .slideri {
+        width: auto !important;
+        overflow: unset !important;
+    }
+    .kalam_awards_wrap{
+        margin: auto;
+    }
     .award_popup {
         width: 32vw;
     }
@@ -2632,6 +2657,7 @@ font-size: 15px;
 
 
 /* crousel */
+
 .slideri {
     touch-action: pan-y;
     width: 800px;
@@ -2642,6 +2668,18 @@ font-size: 15px;
     justify-content: center;
     align-items: center;
     
+}
+.kalam_buisness_success_story iframe {
+    /* width: 100%; */
+    padding: 21px;
+}
+
+.kalam_buisness_success_story iframe {
+    width: 100%;
+    padding: 21px;
+    width: 320px;
+    /* padding: 10px; */
+    height: 100%;
 }
 
 .slideri img {
@@ -3123,3 +3161,34 @@ font-size: 15px;
 }
 
 
+
+
+
+.popup_item_box {
+    position: relative;
+    background: #0000002b;
+}
+.box_item {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    background: #0000002b;
+}
+.box_item svg {
+    width: 20px;
+    position: relative;
+    top: 120px;
+    left: 23px;
+}
+.box_item_img {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box_item_img img {
+    width: 411px;
+    height: 242px;
+}
