@@ -376,17 +376,24 @@ document.querySelectorAll('.slideri').forEach(slider => {
 
 const popupdata = [
     {
-     "imgUrl":"../Assests/img/cup.png"
+     "imgUrl":"../Assests/img/google2.png"
     },
     {
-     "imgUrl":"../Assests/img/kalam_webapp1.png"
+     "imgUrl":"../Assests/img/hindustan.jpg"
     },
     {
-     "imgUrl":"../Assests/img/cup.png"
+     "imgUrl":"../Assests/img/prabhat.png"
     },
     {
-     "imgUrl":"../Assests/img/cup.png"
+     "imgUrl":"../Assests/img/google.jpg"
+    },
+    {
+     "imgUrl":"../Assests/img/jagran.jpg"
+    },
+    {
+     "imgUrl":"../Assests/img/durdarshan.png"
     }
+    
  ]
  
  function Poppup(i) {

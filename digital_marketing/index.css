@@ -2647,7 +2647,7 @@ z-index: 1;
         height: 100%;
 }
 .kalam_awards_wrap .big{
-    width: 108px !important;
+    width: 122px !important;
     height: 100%;
 }
 .kalam_vision_wrap{
@@ -3570,8 +3570,12 @@ height: 415px;
         padding-left: 51px;
     }
 @media (max-width: 600px) {
+    .kalam_award_wrap_img {
+        height: 234px !important;
+        width: auto !important;
+    }
     .award_popup {
-        width: 32vw;
+        width: 30vw;
     }
     .kalam_banner_bottom{
         padding: 0;
@@ -4082,3 +4086,12 @@ font-size: 15px;
     justify-content: center;
 }
 
+#popupData {
+    width: 516px;
+    height: 400px;
+}
+#popupData img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

@@ -343,16 +343,29 @@ height: 415px;
     position: relative;
 }
 .kalam_buisness_banner_section {
-    background-image: url(../Assests/img/kalam_buisness_banner.jpeg);
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-    padding: 2rem;
+       /* background-image: url(../Assests/img/banner.png); */
+    /* background-image: url(../Assests/img/kalam_buisness_banner.jpeg); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* padding: 2rem; */
+    background: var(--theme-color);
     color: #fff;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    padding-left: 411px;
+}
+.kalam_banner_section_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.kalam_banner_section_img {
+    width: 300px;
+    height: 178px;
+}
+.kalam_banner_wrap{
+    padding-left: 15vw;
 }
 .kalam_buisness_banner_section h2{
     font-size: 40px !important;
@@ -752,15 +765,36 @@ font-size: 15px !important;
 
 .dropdown:hover .dropdown-content {display: block;}
 
+#popupData {
+    width: 516px;
+    height: 400px;
+}
+#popupData img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 @media (max-width: 600px) {
+    .kalam_award_wrap_img {
+        height: 234px !important;
+        width: auto !important;
+    }
+    .kalam_banner_section_img{
+        padding: 0.8px 0px;
+        width: 214px;
+        height: 134px;
+    }
+    .kalam_banner_wrap{
+        padding-left: 0;
+    }
 
     .award_popup img{
         width: 100%;
         height: 100%;
     }
     .award_popup {
-        width: 32vw;
+        width: 30vw;
     }
     .kalam_reuse_certificate_section h2 b{
         font-size: 38px;
@@ -855,7 +889,7 @@ font-size: 15px !important;
         margin-bottom: 34px;
     }
     .kalam_buisness_banner_section {
-        background-image: url(../Assests/img/kalam_buisness_banner_small.jpeg);
+        /* background-image: url(../Assests/img/kalam_buisness_banner_small.jpeg); */
     }
     .kalam_reuse_partner_section{
         padding-bottom: 0 !important;
@@ -956,12 +990,8 @@ font-size: 15px !important;
 
 }
 .kalam_buisness_banner_section{
-        padding-left: 10rem;
-        text-align: center;
-        padding-right: 0;
-        padding-bottom: 10px;
-        padding-top: 14px;
-        text-align: center;
+              text-align: center;
+              padding: 2px 0px;
 }
 .kalam_why_page_box1{
     gap: 6px;
@@ -1964,7 +1994,7 @@ z-index: 1;
         height: 100%;
 }
 .kalam_awards_wrap .big{
-    width: 108px !important;
+    width: 122px !important;
     height: 100%;
 }
 .kalam_vision_wrap{
