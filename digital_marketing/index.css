@@ -3570,6 +3570,9 @@ height: 415px;
         padding-left: 51px;
     }
 @media (max-width: 600px) {
+    .award_popup {
+        width: 32vw;
+    }
     .kalam_banner_bottom{
         padding: 0;
     }
