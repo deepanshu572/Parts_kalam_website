@@ -1099,7 +1099,7 @@ z-index: 1;
 .kalam_right_bg img{
     position: absolute;
     top: -368px;
-    right: 61vw;
+    right: 63vw;
 }
 .kalam_left_bg{
     display: block;
@@ -1209,3 +1209,23 @@ z-index: 1;
     height: 100%;
     object-fit: contain;
 }
+
+.kalam_why_page_text .g{
+    color: #4e8bf5 !important;
+}
+.kalam_why_page_text .o{
+    color: #eb4234 !important;
+}
+.kalam_why_page_text .o1{
+    color: #f9bd17 !important;
+}
+.kalam_why_page_text .g1{
+    color: #4e8bf5 !important;
+}
+.kalam_why_page_text .l{
+    color: #32a751 !important;
+}
+.kalam_why_page_text .e{
+    color: #eb4234 !important;
+}
+
