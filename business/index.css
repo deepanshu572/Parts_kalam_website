@@ -12,7 +12,6 @@
     justify-content: center;
     padding: 6rem 2rem 0;
     gap: 28px;
-    flex-wrap: wrap;
     height: 460px
 }
 
@@ -123,7 +122,6 @@ body {
 
 .kalam_buisness_form_video_section {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 0;
@@ -784,7 +782,41 @@ body {
     object-fit: contain
 }
 
-@media (max-width:600px) {
+@media  (max-width:800px) and (min-width:600px){
+    .arrow_img{
+        display: none !important;
+    }
+   .direction1{
+        display: none !important;
+    }
+   .direction2{
+        display: none !important;
+    }
+}
+@media (max-width:1250px) {
+    .kalam_buisness_hero_section{
+        height: auto;
+    }
+}
+@media (max-width:800px) {
+    .direction1{
+        display: block;
+    }
+   .direction2{
+        display: block;
+    }
+    .kalam_buisness_hero_section{
+        flex-wrap: wrap;
+    }
+    .kalam_buisness_form_video_section{
+        flex-wrap: wrap;
+    }
+    
+    .box_item svg {
+            top: 128px !important;
+            left: 91vw !important;
+            fill: red;
+    }
     .kalam_award_wrap_img {
         height: 234px !important;
         width: auto !important;
@@ -956,6 +988,7 @@ body {
     }
 
     .arrow_img {
+        display: block ;
         width: 123px
     }
 
@@ -996,7 +1029,7 @@ body {
     }
 
     .kalam_buisness_hero_section_first {
-        height: 533px
+        height: auto !important
     }
 
     .kalam_buisness_top h1 {
@@ -1650,6 +1683,13 @@ body {
     color: var(--theme-color)
 }
 
+.box_item svg {
+    width: 20px;
+    position: relative;
+    top: 120px;
+    fill: red;
+    left: 96%
+}
 .kalam_footer a {
     color: #fff
 }
@@ -2160,12 +2200,7 @@ body {
     background: #0000002b
 }
 
-.box_item svg {
-    width: 20px;
-    position: relative;
-    top: 120px;
-    left: 23px
-}
+
 
 .box_item_img {
     height: 100vh;

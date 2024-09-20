@@ -1,65 +1,3 @@
-async function RegisterWDCUser() {
-    var full_name = document.getElementById("full_name").value; // $("#full_name").val();
-    var User_Email = document.getElementById("User_Email").value; // $("#User_Email").val();
-    var User_Phone = document.getElementById("User_Phone").value; // $("#User_Phone").val();
-    if (full_name == "" || User_Email == "" || User_Phone == "") {
-      alert("Please Fill The Form");
-    } else {
-      const formData = new FormData();
-      formData.append("Type", "002");
-      formData.append("full_name", full_name);
-      formData.append("User_Email", User_Email);
-      formData.append("User_Phone", User_Phone);
-      let req = await fetch("https://kalamacademy.org/learn/leadcaptureapi.php", {
-        method: "POST",
-        body: formData,
-      });
-      let data = await req.json();
-      console.log(data);
-      
-      add_lead( full_name , User_Email , User_Phone , "" , "WDC" );
-      
-      if (data > 0) {
-        location.href = "https://www.kalamacademy.org/thank-you-for-signup-for-php-course/";
-      } else {
-        alert(data);
-      }
-    }
-  }
-
-
-  
-  async function add_lead( full_name , User_Email , User_Phone , Shop_Size , interested_in ) {
-    
-    const formData1 = new FormData();
-    formData1.append( "Type", "003A" );
-    formData1.append("name", full_name );
-    formData1.append("email", User_Email );
-    formData1.append("mobile", User_Phone );
-    formData1.append("alternate_mobile", 0 );
-    formData1.append("whatsapp", 0 );
-    
-    formData1.append( "interested_in" , interested_in );
-    formData1.append( "source" , "website" );
-    formData1.append( "status" , "Unassigned" );
-    formData1.append( "caller" , '' );
-    formData1.append( "caller_id" , '' );
-    formData1.append( "state" , '' );
-    formData1.append( "city" , '' );
-    
-    formData1.append("Shop_Size", Shop_Size );
-    
-    let req = await fetch("https://teamka.in/crm1/APIs/ash.php", {
-      method: "POST",
-      body: formData1,
-    });
-    let data = await req.json();
-
-    console.log(data);
-    
-}
-
-
 // iframe YT code start
 
 let ashInterval;
@@ -140,32 +78,31 @@ function checkElement(el) {
 
 // navbar2 js
 
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("div[id]");
-    const navLinks = document.querySelectorAll("#navbar ul li a");
+const sections = document.querySelectorAll('.section');
 
-    const observerOptions = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 0.5 // Adjust the threshold as needed
-    };
+const navLinks = {
+  StudentReview: document.getElementById('home-link'),
+  Syllabus: document.getElementById('about-link'),
+  Placements: document.getElementById('contact-link'),
+  faq: document.getElementById('faq-link')
+};
 
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            const id = entry.target.id;
-            const navLink = document.querySelector(`#navbar ul li a[href="#${id}"]`);
-            if (entry.isIntersecting) {
-                navLinks.forEach(link => link.classList.remove("active"));
-                navLink.classList.add("active");
-            }
-        });
-    }, observerOptions);
+function checkSectionInView() {
+    let scrollPosition = window.scrollY + window.innerHeight / 2;
 
-    sections.forEach(section => observer.observe(section));
-});
-
-
-
+    sections.forEach(section => {
+        let sectionTop = section.offsetTop;
+        let sectionBottom = sectionTop + section.offsetHeight;
+        
+        if (scrollPosition >= sectionTop && scrollPosition <= sectionBottom) {
+            Object.values(navLinks).forEach(link => link.classList.remove('active'));
+            let id = section.getAttribute('id');
+            navLinks[id].classList.add('active');
+        }
+    });
+}
+window.addEventListener('scroll', checkSectionInView);
+window.addEventListener('load', checkSectionInView);
 
 
 function initializeSlider(slider) {
@@ -377,46 +314,62 @@ document.querySelectorAll('.slideri').forEach(slider => {
 
 const popupdata = [
     {
-     "imgUrl":"../Assests/img/google2.png"
+     "imgUrl":"../newAssests/img/google2.png"
     },
     {
-     "imgUrl":"../Assests/img/hindustan.jpg"
+     "imgUrl":"../newAssests/img/hindustan.jpg"
     },
     {
-     "imgUrl":"../Assests/img/prabhat.png"
+     "imgUrl":"../newAssests/img/prabhat.png"
     },
     {
-     "imgUrl":"../Assests/img/google.jpg"
+     "imgUrl":"../newAssests/img/google.jpg"
     },
     {
-     "imgUrl":"../Assests/img/jagran.jpg"
+     "imgUrl":"../newAssests/img/jagran.jpg"
     },
     {
-     "imgUrl":"../Assests/img/durdarshan.png"
+     "imgUrl":"../newAssests/img/durdarshan.png"
     }
     
  ]
  
  function Poppup(i) {
-     var item = document.getElementById('popupData');
-     item.innerHTML = `<img src="${popupdata[i].imgUrl}" alt="">`  
- }
- var btns = document.querySelectorAll('.award_popup');
- var btnsBox = document.getElementById('hide');
- var close = document.getElementById('close');
- 
- btns.forEach(function(btn) {
-     btn.addEventListener("click", function(){
-         btnsBox.style.display = "block";
-         document.body.style.overflow = 'hidden';
-     });
- });
- 
- close.addEventListener("click", function(){
-     btnsBox.style.display = "none";
-     document.body.style.overflow = 'auto';
+    var item = document.getElementById('popupData');
+    item.innerHTML = `<img src="${popupdata[i].imgUrl}" alt="">`  
+}
+var btns = document.querySelectorAll('.award_popup');
+var btnsBox = document.getElementById('hide');
+var close = document.getElementById('close');
 
- });
- 
+btns.forEach(function(btn) {
+    btn.addEventListener("click", function(){
+        btnsBox.style.display = "block";
+        document.body.style.overflow = 'hidden';
+    });
+});
 
-   
+close.addEventListener("click", function(){
+    btnsBox.style.display = "none";
+    document.body.style.overflow = 'auto';
+
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    let lazyloadImages = document.querySelectorAll("img.lazyload");
+    let imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let image = entry.target;
+          image.src = image.dataset.src;
+          image.classList.remove("lazyload");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  });
+

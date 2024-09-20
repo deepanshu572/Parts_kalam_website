@@ -62,7 +62,8 @@ body {
     width: 20px;
     position: relative;
     top: 120px;
-    left: 23px
+    fill: red;
+    left: 96%
 }
 
 .kalam_awards_wrap {
@@ -427,7 +428,7 @@ body {
 }
 
 .kalam_digital_hero_section {
-    padding-top: 3rem !important;
+    padding-top: 7rem !important;
     align-items: center !important
 }
 
@@ -852,6 +853,9 @@ body {
 }
 
 @media (max-width:690px) {
+    .kalam_buisness_form_video_section{
+        flex-wrap: wrap;
+    }
     .kalam_web_img {
         width: 76px;
         height: 84.14px;
@@ -944,7 +948,8 @@ body {
 
     .kalam_Syllabus,
     .kalam_digital_hero_section .kalam_buisness_left {
-        padding-bottom: 0
+        padding-bottom: 0 !important;
+        padding-top: 0px !important
     }
 
     .kalam_web_house_box1 {
@@ -2146,7 +2151,6 @@ body {
     justify-content: center;
     padding: 6rem 2rem 0;
     gap: 28px;
-    flex-wrap: wrap;
     height: 460px
 }
 
@@ -2217,7 +2221,6 @@ body {
 
 .kalam_buisness_form_video_section {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     padding: 2rem 0;
@@ -2737,7 +2740,34 @@ body {
     padding-left: 51px
 }
 
-@media (max-width:600px) {
+@media (max-width:1059px) {
+    .kalam_buisness_left{
+        width: auto !important;
+    }
+    .kalam_buisness_hero_section{
+        height: auto !important;
+    }
+    .kalam_digital_hero_section .kalam_buisness_left{
+        padding-bottom: 0;
+        padding-top: 30px;
+    }
+    .kalam_buisness_development h2, .kalam_buisness_support h2, .kalam_buisness_top h1, .kalam_buisness_why_kalam h2, .kalam_digital_benefits_section h2, .kalam_web_career_section h2{
+        font-size: 35px;
+    }
+    .kalam_buisness_hero_section{
+        padding-top: 5rem !important;
+    }
+}
+@media (max-width:800px) {
+
+    .kalam_buisness_hero_section{
+        flex-wrap: wrap;
+    }
+    .box_item svg{
+        top: 128px;
+        left: 91vw;
+        fill: red;
+    }
     .kalam_award_wrap_img {
         height: 234px !important;
         width: auto !important;
@@ -2785,7 +2815,7 @@ body {
     }
 
     .hero_update {
-        height: 633px !important
+        height: auto !important
     }
 
     .kalam_reuse_certificate_section {
@@ -2952,7 +2982,8 @@ body {
 
     .kalam_buisness_hero_section {
         padding: 5rem 1rem 0;
-        height: 500px
+        height: 500px;
+        padding-top: 7rem !important;
     }
 
     .kalam_buisness_left {

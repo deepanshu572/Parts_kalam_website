@@ -4,8 +4,7 @@ let ashInterval;
 let count1 = 0;
 //QbBpo1zv3TM
 const players = [
-    { id: 'player1', videoId: 'T9jmlMcNJHk', player: null },
-    { id: 'player2', videoId: 'LJ8_WJp2SAk', player: null }
+    { id: 'player1', videoId: 'lylCGpcwam0', player: null },
 ];
 
 function onYouTubeIframeAPIReady() {
@@ -73,27 +72,24 @@ function checkElement(el) {
     (left + width) <= (window.pageXOffset + window.innerWidth)
   );
 }
-
-
-
 const popupdata = [
     {
-     "imgUrl":"../newAssests/img/google2.png"
+     "imgUrl":"newAssests/img/google2.png"
     },
     {
-     "imgUrl":"../newAssests/img/hindustan.jpg"
+     "imgUrl":"newAssests/img/hindustan.jpg"
     },
     {
-     "imgUrl":"../newAssests/img/prabhat.png"
+     "imgUrl":"newAssests/img/prabhat.png"
     },
     {
-     "imgUrl":"../newAssests/img/google.jpg"
+     "imgUrl":"newAssests/img/google.jpg"
     },
     {
-     "imgUrl":"../newAssests/img/jagran.jpg"
+     "imgUrl":"newAssests/img/jagran.jpg"
     },
     {
-     "imgUrl":"../newAssests/img/durdarshan.png"
+     "imgUrl":"newAssests/img/durdarshan.png"
     }
     
  ]
@@ -118,10 +114,9 @@ close.addEventListener("click", function(){
     document.body.style.overflow = 'auto';
 
 });
-
-
  
 
+   
 document.addEventListener("DOMContentLoaded", function() {
     let lazyloadImages = document.querySelectorAll("img.lazyload");
     let imageObserver = new IntersectionObserver(function(entries, observer) {
@@ -139,3 +134,4 @@ document.addEventListener("DOMContentLoaded", function() {
       imageObserver.observe(image);
     });
   });
+
