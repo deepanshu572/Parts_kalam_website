@@ -109,7 +109,7 @@ body {
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
     padding: 4rem 0 2rem;
-    background-image: url(../img/big_img.jpg);
+    background-image: url(../img/big_img.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover
