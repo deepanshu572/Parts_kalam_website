@@ -2763,6 +2763,13 @@ body {
     }
 }
 
+.kalam_buisness_video_section #player1{
+    width: 100%;
+    height: 100%;
+} .kalam_buisness_video_section #player2{
+    width: 100%;
+    height: 100%;
+}
 @media (max-width:500px) {
   
     .kalam_buisness_video_section {
