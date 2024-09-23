@@ -1,5 +1,8 @@
 // yt code
 
+// function ytframe() {
+    
+
 let ashInterval;
 let count1 = 0;
 //QbBpo1zv3TM
@@ -74,6 +77,7 @@ function checkElement(el) {
     (left + width) <= (window.pageXOffset + window.innerWidth)
   );
 }
+// }
 
 // second navbar js
        
@@ -373,4 +377,14 @@ const popupdata = [
       imageObserver.observe(image);
     });
   });
+
+
+  const images = document.querySelectorAll('.img_wrap');
+  
+  images.forEach(image => {
+    image.addEventListener('click', function() {
+      onYouTubeIframeAPIReady(); 
+    });
+  });
+  
 

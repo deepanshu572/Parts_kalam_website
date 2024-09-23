@@ -135,3 +135,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+
+  const images = document.querySelectorAll('.img_wrap');
+  console.log(images);
+  
+
+  images.forEach(image => {
+    image.addEventListener('click', function() {
+    //   alert();
+      onYouTubeIframeAPIReady(); 
+    });
+  });
+  

@@ -270,6 +270,7 @@ body {
     font-weight: 500
 }
 
+#navbar ul li a,
 .kalam_what_detail_text span b {
     color: #000
 }
@@ -413,10 +414,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 100%
-}
-
-#navbar ul li a {
-    color: #000
 }
 
 #navbar ul li a.active {
@@ -655,7 +652,8 @@ body {
     color: var(--theme-color)
 }
 
-.kalam_footer a {
+.kalam_footer a,
+.kalam_reuse_topic_content p {
     color: #fff
 }
 
@@ -1816,16 +1814,31 @@ body {
     font-size: 17px;
     outline: 0
 }
+@media (max-width:500px) {
+  
+
+    .kalam_buisness_video_section {
+        width: 100%;
+        height: 207px !important
+    }
+    .kalam_buisness_input_wrapper {
+        gap: 16px !important;
+        width: 95vw !important;
+        gap: 19px
+    }
+}
 
 @media (max-width:800px) {
-    .kalam_web_hero_section{
-        flex-wrap: wrap;
+    .kalam_web_hero_section {
+        flex-wrap: wrap
     }
-    .box_item svg{
+
+    .box_item svg {
         top: 128px !important;
         left: 91vw !important;
-        fill: red;
+        fill: red
     }
+
     .kalam_award_wrap_img {
         height: 234px !important;
         width: auto !important;
@@ -2072,10 +2085,6 @@ body {
         padding-top: 0
     }
 
-    /* .kalam_buisness_hero_section_first {
-        height: 533px
-    } */
-
     .kalam_buisness_top h1 {
         font-size: 26px
     }
@@ -2103,10 +2112,7 @@ body {
         font-weight: 700
     }
 
-    .kalam_buisness_video_section {
-        width: 100%;
-        height: 207px
-    }
+  
 
     .kalam_buisness_banner_section {
         padding-right: 0;
@@ -2173,12 +2179,6 @@ body {
 
     .kalam_buisness_form_section h2 {
         font-size: 19px
-    }
-
-    .kalam_buisness_input_wrapper {
-        gap: 16px !important;
-        width: 95vw;
-        gap: 19px
     }
 
     .kalam_buisness_development {
@@ -2434,9 +2434,10 @@ body {
 }
 
 @media (max-width:800px) {
-    .kalam_buisness_form_video_section{
-        flex-wrap: wrap;
+    .kalam_buisness_form_video_section {
+        flex-wrap: wrap
     }
+
     .kalam_buisness_mix_content p {
         text-align: unset !important
     }
@@ -2787,10 +2788,6 @@ body {
     border-top-left-radius: 14px
 }
 
-.kalam_reuse_topic_content p {
-    color: #fff
-}
-
 .kalam_reuse_topic_head {
     padding: 15px;
     display: flex;
@@ -3080,4 +3077,9 @@ body {
 
 .kalam_why_page_text .l {
     color: #32a751 !important
+}
+
+.img_wrap{
+    width: 100%;
+    height: 100%;
 }

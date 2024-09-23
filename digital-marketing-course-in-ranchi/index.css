@@ -717,6 +717,7 @@ body {
     border-top-left-radius: 14px
 }
 
+.kalam_footer a,
 .kalam_reuse_topic_content p {
     color: #fff
 }
@@ -853,9 +854,10 @@ body {
 }
 
 @media (max-width:690px) {
-    .kalam_buisness_form_video_section{
-        flex-wrap: wrap;
+    .kalam_buisness_form_video_section {
+        flex-wrap: wrap
     }
+
     .kalam_web_img {
         width: 76px;
         height: 84.14px;
@@ -889,7 +891,7 @@ body {
     }
 
     .kalam_reuse_syllabus {
-        width: 97%
+        width: 97% !important
     }
 
     .kalam_digital_hero_section .kalam_buisness_bottom button {
@@ -949,7 +951,7 @@ body {
     .kalam_Syllabus,
     .kalam_digital_hero_section .kalam_buisness_left {
         padding-bottom: 0 !important;
-        padding-top: 0px !important
+        padding-top: 0 !important
     }
 
     .kalam_web_house_box1 {
@@ -1306,6 +1308,7 @@ body {
     font-weight: 500
 }
 
+#navbar ul li a,
 .kalam_what_detail_text span b {
     color: #000
 }
@@ -1449,10 +1452,6 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 100%
-}
-
-#navbar ul li a {
-    color: #000
 }
 
 #navbar ul li a.active {
@@ -1668,10 +1667,6 @@ body {
 .kalam_footer h2 {
     font-size: 24px;
     color: var(--theme-color)
-}
-
-.kalam_footer a {
-    color: #fff
 }
 
 .kalam_footer p {
@@ -2741,33 +2736,58 @@ body {
 }
 
 @media (max-width:1059px) {
-    .kalam_buisness_left{
-        width: auto !important;
+    .kalam_buisness_left {
+        width: auto !important
     }
-    .kalam_buisness_hero_section{
+
+    .kalam_buisness_hero_section {
         height: auto !important;
+        padding-top: 5rem !important
     }
-    .kalam_digital_hero_section .kalam_buisness_left{
+
+    .kalam_digital_hero_section .kalam_buisness_left {
         padding-bottom: 0;
-        padding-top: 30px;
+        padding-top: 30px
     }
-    .kalam_buisness_development h2, .kalam_buisness_support h2, .kalam_buisness_top h1, .kalam_buisness_why_kalam h2, .kalam_digital_benefits_section h2, .kalam_web_career_section h2{
-        font-size: 35px;
+
+    .kalam_buisness_development h2,
+    .kalam_buisness_support h2,
+    .kalam_buisness_top h1,
+    .kalam_buisness_why_kalam h2,
+    .kalam_digital_benefits_section h2,
+    .kalam_web_career_section h2 {
+        font-size: 35px
     }
-    .kalam_buisness_hero_section{
-        padding-top: 5rem !important;
+    .kalam_buisness_video_section{
+        height: 300px !important;
+    }
+}
+
+@media (max-width:500px) {
+  
+    .kalam_buisness_video_section {
+        width: 100%;
+        height: 207px !important
+    }
+    .kalam_buisness_input_wrapper {
+        gap: 16px !important;
+        width: 95vw !important;
+        gap: 19px
     }
 }
 @media (max-width:800px) {
-
-    .kalam_buisness_hero_section{
-        flex-wrap: wrap;
+    .kalam_reuse_syllabus{
+        width: 80vw;
     }
-    .box_item svg{
+    .kalam_buisness_input_wrapper{
+        width: 65vw;
+    }
+    .box_item svg {
         top: 128px;
         left: 91vw;
-        fill: red;
+        fill: red
     }
+
     .kalam_award_wrap_img {
         height: 234px !important;
         width: auto !important;
@@ -2810,10 +2830,7 @@ body {
         font-size: 38px
     }
 
-    #digital {
-        height: auto !important
-    }
-
+    #digital,
     .hero_update {
         height: auto !important
     }
@@ -2981,9 +2998,10 @@ body {
     }
 
     .kalam_buisness_hero_section {
+        flex-wrap: wrap;
         padding: 5rem 1rem 0;
         height: 500px;
-        padding-top: 7rem !important;
+        padding-top: 7rem !important
     }
 
     .kalam_buisness_left {
@@ -3022,10 +3040,7 @@ body {
         font-weight: 700
     }
 
-    .kalam_buisness_video_section {
-        width: 100%;
-        height: 207px
-    }
+   
 
     .kalam_buisness_banner_section {
         padding-right: 0;
@@ -3079,11 +3094,7 @@ body {
         font-size: 19px
     }
 
-    .kalam_buisness_input_wrapper {
-        gap: 16px !important;
-        width: 95vw;
-        gap: 19px
-    }
+  
 
     .kalam_buisness_development {
         padding-bottom: 1rem
@@ -3322,4 +3333,8 @@ body {
 
 .kalam_why_page_text .l {
     color: #32a751 !important
+}
+.img_wrap{
+    width: 100%;
+    height: 100%;
 }

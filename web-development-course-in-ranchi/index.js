@@ -5,7 +5,6 @@ let count1 = 0;
 //QbBpo1zv3TM
 const players = [
     { id: 'player1', videoId: 'JFtMkRVQ-fo', player: null },
-    { id: 'player2', videoId: '1ZV4k1_kAek', player: null },
     { id: 'player3', videoId: '79annCWsSdU', player: null }
 ];
 
@@ -373,3 +372,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  const images = document.querySelectorAll('.img_wrap');
+  console.log(images);
+  
+
+  images.forEach(image => {
+    image.addEventListener('click', function() {
+    //   alert();
+      onYouTubeIframeAPIReady(); 
+    });
+  });
+  

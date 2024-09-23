@@ -139,3 +139,16 @@ document.addEventListener("DOMContentLoaded", function() {
       imageObserver.observe(image);
     });
   });
+  
+
+  const images = document.querySelectorAll('.img_wrap');
+  console.log(images);
+  
+
+  images.forEach(image => {
+    image.addEventListener('click', function() {
+      // alert();
+      onYouTubeIframeAPIReady(); 
+    });
+  });
+  
